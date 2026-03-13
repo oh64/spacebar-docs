@@ -1,9 +1,14 @@
 {
-	"name": "mkdocs",
-	"version": "1.0.0",
-	"private": true,
-	"scripts": {
-		"dev": "mkdocs serve",
-		"build": "mkdocs build -d public"
-	}
+  "name": "mkdocs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "mkdocs serve",
+    "build": "mkdocs build -d public",
+    "deploy": "wrangler deploy",
+    "preview": "wrangler dev"
+  },
+  "devDependencies": {
+    "wrangler": "^4.73.0"
+  }
 }
